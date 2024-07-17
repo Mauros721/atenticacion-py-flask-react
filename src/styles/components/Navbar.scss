@@ -1,0 +1,43 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(45deg, yellow, deeppink, purple, indigo);
+  color: #fff;
+  padding: 1rem;
+
+  & .Link {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      display: block;
+      width: 3px;
+      height: 3px;
+      background: #fff;
+      box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 0.2rem #fff;
+      transition: width .3s;
+    }
+
+    &:hover::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: deepskyblue;
+      box-shadow: 0 0 0.2rem dodgerblue, 0 0 0.2rem dodgerblue, 0 0 0.2rem dodgerblue;
+      transition: width .3s;
+    }
+  }
+}

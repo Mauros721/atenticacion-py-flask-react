@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  min-width: 80vw;
+  box-sizing: border-box;
+  background: #202020;
+  font-family: 'Inter Semi Bold', sans-serif;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
